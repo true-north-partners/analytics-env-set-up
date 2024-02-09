@@ -1,7 +1,7 @@
 <Configuration>
     <MappedFolders>
         <MappedFolder>
-            <HostFolder>C:\Users\KostasPapazafeiropou\repos\analytics-env-set-up</HostFolder>
+            <HostFolder><local-path></HostFolder>
             <SandboxFolder>C:\Users\WDAGUtilityAccount\analytics-env-set-up</SandboxFolder>
             <ReadOnly>false</ReadOnly>
         </MappedFolder>
