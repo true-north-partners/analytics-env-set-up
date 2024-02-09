@@ -1,0 +1,17 @@
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>C:\Users\KostasPapazafeiropou\repos\analytics-env-set-up</HostFolder>
+            <SandboxFolder>C:\Users\WDAGUtilityAccount\analytics-env-set-up</SandboxFolder>
+            <ReadOnly>false</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <LogonCommand>
+		<Command>powershell -ExecutionPolicy Unrestricted -Command "&amp; {Start-Process powershell -ArgumentList '-noexit','-ExecutionPolicy','Bypass','-File','C:\Users\WDAGUtilityAccount\analytics-env-set-up\init-python-env.ps1'}"</Command>
+    </LogonCommand>
+</Configuration>
+
+
+
+
+

@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "analytics"
+version = "1.0"
+description = "Data science and analytics"
+authors = [
+    "IT Support <ITsupport@gatehousebank.com>",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.0"
+numpy = "^1.26.3"
+scipy = "^1.12.0"
+matplotlib = "^3.8.2"
+seaborn = "^0.13.2"
+scikit-learn = "^1.4.0"
+jupyterlab = "^4.0.11"
+polars = "^0.20.7"
+xlwings = "^0.30.13"
+pyodbc = "^5.1.0"
+sqlalchemy = "^2.0.25"
+jupyter = "^1.0.0"
+notebook = "^7.0.7"
+nbconvert = {extras = ["webpdf"], version = "^7.15.0"}
+playwright = "^1.41.1"
+jupyterlab-hide-code = "^3.6.3"
+jupyterlabcodetoc = "^4.0.1"
+jupyterlab-spellchecker = "^0.8.4"
+jupyterlab-unfold = "^0.3.0"
+jupyterlab-visualpython = "^3.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
