@@ -9,6 +9,10 @@
 # ---------------------------------------------------------------------------- 
 Set-ExecutionPolicy Bypass -Scope Process -Force
 
+$PROJECTS_PATH = "$HOME\projects"
+$PYTHON_ENV_SET_UP_REPO = "analytics-env-set-up"
+$JUPYTER_STARTER_KIT_REPO = "jupyter-starter-kit"
+
 Write-Host -ForegroundColor Green "Installing $PROJECTS_PATH chocolatey package manager ..."
 Unblock-File -Path 'C:\Users\WDAGUtilityAccount\analytics-env-set-up\src\init-python-env.ps1'
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
@@ -19,10 +23,6 @@ Write-Host -ForegroundColor Yellow "Installing git via  chocolatey..."
 choco install git -y
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
 Write-Host -ForegroundColor Green "git installed!"
-
-$PROJECTS_PATH = "$HOME\projects"
-$PYTHON_ENV_SET_UP_REPO = "analytics-env-set-up"
-$JUPYTER_STARTER_KIT_REPO = "jupyter-starter-kit"
 
 if (-Not (Test-Path -Path $PROJECTS_PATH)) {
     Write-Host -ForegroundColor Green "Creating $PROJECTS_PATH directory ..."
