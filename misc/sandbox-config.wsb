@@ -7,9 +7,10 @@
         </MappedFolder>
     </MappedFolders>
     <LogonCommand>
-		<Command>powershell -ExecutionPolicy Unrestricted -Command "&amp; {Start-Process powershell -ArgumentList '-noexit','-ExecutionPolicy','Bypass','-File','C:\Users\WDAGUtilityAccount\analytics-env-set-up\init-python-env.ps1'}"</Command>
+		<Command>powershell -ExecutionPolicy Unrestricted -Command "&amp; {Start-Process powershell -ArgumentList '-noexit','-ExecutionPolicy','Bypass','-File','C:\Users\WDAGUtilityAccount\analytics-env-set-up\src\init-python-env.ps1'}"</Command>
     </LogonCommand>
 </Configuration>
+
 
 
 

@@ -24,4 +24,4 @@ Windows virtualisation and sandbox features enabled. Refer to the
 
 Let's look at this in practice below
 
-![](./demo.gif)
+![](./img/demo.gif)

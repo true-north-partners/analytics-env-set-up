@@ -10,7 +10,7 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force
 
 Write-Host -ForegroundColor Green "Installing $PROJECTS_PATH chocolatey package manager ..."
-Unblock-File -Path 'C:\Users\WDAGUtilityAccount\analytics-env-set-up\init-python-env.ps1'
+Unblock-File -Path 'C:\Users\WDAGUtilityAccount\analytics-env-set-up\src\init-python-env.ps1'
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 Write-Host -ForegroundColor Green "chocolatey installed created!"
@@ -35,7 +35,7 @@ if (-Not (Test-Path -Path $PROJECTS_PATH)) {
 if (-Not (Test-Path -Path "$PROJECTS_PATH\$PYTHON_ENV_SET_UP_REPO")) {
     Write-Host -ForegroundColor Yellow "Cloning $PYTHON_ENV_SET_UP_REPO ..."
     Set-Location $PROJECTS_PATH
-    git clone https://github.com/specialkapa/$PYTHON_ENV_SET_UP_REPO.git
+    git clone https://github.com/true-north-partners/$PYTHON_ENV_SET_UP_REPO.git
     Write-Host -ForegroundColor Green "Cloned successfully!"
 } else {
     Write-Host -ForegroundColor Green "Local $PYTHON_ENV_SET_UP_REPO repo already exists!"
@@ -97,7 +97,7 @@ pipx install poetry
 Write-Host -ForegroundColor Green "poetry and ipython have been installed!"
 
 Write-Host -ForegroundColor Yellow "Installing python dependencies"
-pip install -r "$PROJECTS_PATH\$PYTHON_ENV_SET_UP_REPO\requirements.txt"
+pip install -r "$PROJECTS_PATH\$PYTHON_ENV_SET_UP_REPO\misc\requirements.txt"
 Write-Host -ForegroundColor Green "python dependencies are installed!"
 
 Write-Host -ForegroundColor Yellow "Installing chormium via playwright ..."
@@ -115,7 +115,7 @@ if ( (Test-Path -Path $PROJECTS_PA"$PROJECTS_PATH\$JUPYTER_STARTER_KIT_REPO")) {
     Remove-Item -Path "$PROJECTS_PATH\$JUPYTER_STARTER_KIT_REPO" -Recurse -Force
 }
 Write-Host -ForegroundColor Yellow "Cloning $JUPYTER_STARTER_KIT_REPO ..."
-git clone https://github.com/specialkapa/$JUPYTER_STARTER_KIT_REPO.git
+git clone https://github.com/true-north-partners/$JUPYTER_STARTER_KIT_REPO.git
 Write-Host -ForegroundColor Green "Cloned successfully!"
 
 # ----------------------------------------------------------------------------
