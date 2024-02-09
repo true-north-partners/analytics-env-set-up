@@ -48,7 +48,10 @@ the magic happen. Specifically, the script will automate the following tasks:
      repository.
    - Creation of jupyter shortcuts
 "
+$ANOTHER_MESSAGE = "You get the idea. This will take a while (15min or so)... I 
+will pause here and resume once things are ready for us.
+"
 ./write-typewritter.ps1 $WELCOME -speed 10
 ./write-typewritter.ps1 $MESSAGE -speed 10
-
- 
+sleep 50
+./write-typewritter.ps1 $ANOTHER_MESSAGE -speed 10

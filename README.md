@@ -21,3 +21,7 @@ Windows virtualisation and sandbox features enabled. Refer to the
    - Installation of Python packages specified in `requirements.txt`.
    - Cloning of [jupyter-starter-kit](https://bitbucket.org/ghb-credit-risk/jupyter-starter-kit/src) repository.
    - Creation of jupyter shortcuts
+
+Let's look at this is practice below: 
+
+![](./demo.gif)
