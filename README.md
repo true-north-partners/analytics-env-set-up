@@ -22,6 +22,6 @@ Windows virtualisation and sandbox features enabled. Refer to the
    - Cloning of [jupyter-starter-kit](https://bitbucket.org/ghb-credit-risk/jupyter-starter-kit/src) repository.
    - Creation of jupyter shortcuts
 
-Let's look at this is practice below: 
+Let's look at this in practice below
 
 ![](./demo.gif)
